@@ -1,4 +1,25 @@
-/* colors */
+@charset "UTF-8";
+
+@keyframes suavisar {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes movex {
+  from {
+    opacity: 0;
+    transform: translatey(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translatey(0%);
+  }
+}
+
 html {
   width: 100%;
   height: 100%;
@@ -14,37 +35,14 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
-}
-
-.container-dark-mode {
-  display: flex;
-  justify-content: flex-end;  
-}
-
-.button-dark-mode{
-  cursor: pointer;
-}
-
-.dark-mode {
-  background-color: black;
-  color: white;
-}
-.img-dark {
-  margin-top: -60px;
-  width: 100px;
-  height: 100px;
-}
-
-form {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: block;
-  width: 100%;
-  max-width: 400px;
   margin: 0;
-  padding: 2.25em;
+}
+form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 1em;
   box-sizing: border-box;
   border-radius: 0.5em;
 }
@@ -125,7 +123,7 @@ form button {
   font-family: inherit;
   transition: background-color 0.2s ease-out;
 }
-form button .button-dark{
+form button .button-dark {
   display: block;
   background-color: #000;
   color: #fff;
@@ -148,9 +146,38 @@ form button:active {
   background-color: #217093;
 }
 
+.container {
+  animation-name: movex;
+  animation-duration: 3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-dark-mode {
+  display: flex;
+  align-self: flex-end;
+}
+
+.button-dark-mode {
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.img-dark {
+  margin-top: -60px;
+  width: 100px;
+  height: 100px;
+}
+
 .input-field {
   position: relative;
   margin-bottom: 10px;
+  width: 300px;
 }
 
 .input-field input:focus {
