@@ -197,7 +197,7 @@ form button:active {
   transition: 0.2s ease-out;
 }
 
-.lnr {
+.eyeButton {
   font-size: 20px;
   position: absolute;
   top: 23px;
