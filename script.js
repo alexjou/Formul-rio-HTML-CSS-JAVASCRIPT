@@ -332,3 +332,22 @@ function validarSenha() {
 
 // verificar também quando o campo for modificado, para que a mensagem suma quando as senhas forem iguais
 senhaC.addEventListener('input', validarSenha);
+
+let btn = document.querySelector('.lnr-eye');
+btn.addEventListener('click', function () {
+  let input = document.querySelector('#password');
+  if (input.getAttribute('type') == 'password') {
+    input.setAttribute('type', 'text');
+  } else {
+    input.setAttribute('type', 'password');
+  }
+});
+let btnConfirm = document.querySelector('.lnr-eye');
+btnConfirm.addEventListener('click', function () {
+  let input = document.querySelector('#confirmPassword');
+  if (input.getAttribute('type') == 'password') {
+    input.setAttribute('type', 'text');
+  } else {
+    input.setAttribute('type', 'password');
+  }
+});
