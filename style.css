@@ -153,6 +153,7 @@ form button:active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .container-dark-mode {
@@ -203,4 +204,23 @@ form button:active {
   top: 23px;
   right: 20px;
   cursor: pointer;
+}
+
+.footerStyle {
+  display: flex;
+  background-color: #2b2d1c;
+  border-top: 2px solid blue;
+  position: fixed;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  color: white;
+  font-size: 15px;
+}
+
+.aStyle {
+  color: white;
+  margin-top: 15px;
 }
